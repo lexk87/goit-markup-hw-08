@@ -1,0 +1,9 @@
+// Общие стили для кнопок
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}

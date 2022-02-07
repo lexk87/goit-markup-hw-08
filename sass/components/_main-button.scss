@@ -1,0 +1,27 @@
+// Основная кнопка
+.main-btn {
+    background-color: $accentColor;
+    padding: 10px 20px;
+    box-shadow: $mainBtnShadow;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: $btnPrimaryTextColor;
+    min-width: 200px;
+    height: 50px;
+    transition: background-color $mainTransition;
+    &:hover,
+    &:focus {
+        background-color: $mainBtnHoverColor;
+    }
+}
+
+.main-btn__text {
+    margin-right: 10px;
+}
+
+.main-btn__icon {
+    fill: currentColor;
+}

@@ -1,0 +1,48 @@
+.iconset-one {
+    display: flex;
+}
+
+.iconset-one__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.iconset-one__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.iconset-one__icon {
+    display: block;
+}
+
+.iconset-one__link--bright-bg {
+    color: $iconsPrimaryColor;
+    transition: background-color $mainTransition, color $mainTransition;
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+        color: $iconsSecondaryColor;
+    }
+}
+
+.iconset-one__icon--bright-bg {
+    fill: currentColor;
+}
+
+.iconset-one__link--dark-bg {
+    background-color: $footerIconsBgColor;
+    color: $footerPrimaryTextColor;
+    transition: background-color $mainTransition;
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+    }
+}
+
+.iconset-one__icon--dark-bg {
+    fill: currentColor;
+}

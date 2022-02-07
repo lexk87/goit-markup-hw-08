@@ -1,0 +1,29 @@
+.portfolio__filter {
+    margin-bottom: 50px;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+.filter__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filter__btn {
+    background-color: $filterBtnColor;
+    border-radius: 4px;
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    letter-spacing: 0.03em;
+    color: $textPrimaryColor;
+    transition: background-color $mainTransition, box-shadow $mainTransition, color $mainTransition;
+    &--active,
+    &:hover,
+    &:focus {
+        @extend %filterBtnHovFocAct;
+    }
+}

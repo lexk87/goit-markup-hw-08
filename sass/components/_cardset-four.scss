@@ -1,0 +1,69 @@
+.cardset-four {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.cardset-four__card {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.cardset-four__link {
+    display: block;
+    transition: box-shadow $mainTransition;
+    &:hover,
+    &:focus {
+        box-shadow: $portfolioCardShadow;
+    }
+}
+
+.cardset-four__thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.cardset-four__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    background-color: $overlayCardColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(101%);
+    transition: transform $mainTransition;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    color: $btnPrimaryTextColor;
+    .cardset-four__link:hover &,
+    .cardset-four__link:focus & {
+        transform: translateY(0);
+    }
+}
+
+.cardset-four__text-box {
+    padding: 20px 24px;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.cardset-four__title {
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    color: $textPrimaryColor;
+}
+
+.cardset-four__description {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    color: $textSecondaryColor;
+}

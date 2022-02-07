@@ -1,0 +1,29 @@
+.iconset-two {
+    display: flex;
+}
+
+.iconset-two__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.iconset-two__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $iconsPrimaryColor;
+    border-radius: 4px;
+    color: $iconsPrimaryColor;
+    transition: color $mainTransition, border-color $mainTransition;
+    &:hover,
+    &:focus {
+        border-color: $accentColor;
+        color: $accentColor;
+    }
+}
+
+.iconset-two__icon {
+    display: block;
+    fill: currentColor;
+}

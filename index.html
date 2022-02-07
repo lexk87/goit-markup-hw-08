@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goit-markup-hw-07-index</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+
+    <!-- Хедер страницы -->
+    <header class="header">
+
+        <!-- Контейнер хедера -->
+        <div class="container header__container">
+            <!-- Логотип хедера -->
+            <a href="./index.html" lang="en" class="logo header__logo">Web<span class="header__logo--color">Studio</span></a>
+            <!-- Навигация хедера -->
+            <nav class="nav header__nav">
+                <!-- Список навигации хедера -->
+                <ul class="links-list">
+                    <li class="links-list__item"><a href="./index.html" class="links-list__link active-link">Студия</a></li>
+
+                    <li class="links-list__item"><a href="./portfolio.html" class="links-list__link">Портфолио</a></li>
+
+                    <li class="links-list__item"><a href="" class="links-list__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <!-- Контакты хедера -->
+            <ul class="contacts-list">
+                <li class="contacts-list__item">
+                    <a href="mailto:info@devstudio.com" class="contacts-list__link">
+                        <svg class="contacts-list__icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-email-icon"></use>
+                        </svg>
+                        <span>info@devstudio.com</span>
+                    </a>
+                </li>
+
+                <li class="contacts-list__item">
+                    <a href="tel:+380961111111" class="contacts-list__link">
+                        <svg class="contacts-list__icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone-icon"></use>
+                        </svg>
+                        <span>+38 096 111 11 11</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- Основной контент главной страницы сайта -->
+    <main class="index__main-content">
+
+        <!-- Секция герой -->
+        <section class="hero">
+
+            <!-- Контейнер секции герой -->
+            <div class="hero__container">
+                <!-- Заголовок секции герой -->
+                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                <!-- Кнопка секции герой -->
+                <button type="button" class="btn main-btn hero__btn" data-modal-open>Заказать услугу</button>
+            </div>
+
+        </section>
+
+        <!-- Секция преимущества -->
+        <section class="section advamtages-section">
+
+            <!-- Контейнер сеции преимущества -->
+            <div class="container">
+                <!-- Логический заголовок секции преимущества -->
+                <h2 class="visually-hidden">Преимущества работы с нами</h2>
+                <!-- Список секции преимущества -->
+                <ul class="cardset-one">
+                    <!-- Карточка списка секции преимущества -->
+                    <li class="cardset-one__card">
+                        <div class="cardset-one__icon-box">
+                            <svg class="cardset-one__icon" width="70" height="70">
+                                <use href="./images/icons.svg#icon-antenna-icon"></use>
+                            </svg>
+                        </div>
+                        <h3 class="cardset-one__title">Внимание к деталям</h3>
+                        <p class="cardset-one__description">Идейные соображения, а также начало повседневной работы по формированию позиции.
+                        </p>
+                    </li>
+                    <!-- Карточка списка секции преимущества -->
+                    <li class="cardset-one__card">
+                        <div class="cardset-one__icon-box">
+                            <svg class="cardset-one__icon" width="70" height="70">
+                                <use href="./images/icons.svg#icon-clock-icon"></use>
+                            </svg>
+                        </div>
+                        <h3 class="cardset-one__title">Пунктуальность</h3>
+                        <p class="cardset-one__description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                        </p>
+                    </li>
+                    <!-- Карточка списка секции преимущества -->
+                    <li class="cardset-one__card">
+                        <div class="cardset-one__icon-box">
+                            <svg class="cardset-one__icon" width="70" height="70">
+                                <use href="./images/icons.svg#icon-diagram-icon"></use>
+                            </svg>
+                        </div>
+                        <h3 class="cardset-one__title">Планирование</h3>
+                        <p class="cardset-one__description">Равным образом консультация с широким активом в значительной степени обуславливает.
+                        </p>
+                    </li>
+                    <!-- Карточка списка секции преимущества -->
+                    <li class="cardset-one__card">
+                        <div class="cardset-one__icon-box">
+                            <svg class="cardset-one__icon" width="70" height="70">
+                                <use href="./images/icons.svg#icon-astronaut-icon"></use>
+                            </svg>
+                        </div>
+                        <h3 class="cardset-one__title">Современные технологии</h3>
+                        <p class="cardset-one__description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- Секция услуги -->
+        <section class="section services-section">
+
+            <!-- Контейнер секции услуги -->
+            <div class="container">
+                <!-- Заголовок секции услуги -->
+                <h2 class="section-title">Чем мы занимаемся</h2>
+                <!-- Список секции услуги -->
+                <ul class="cardset-two">
+                    <!-- Карточка списка секции услуги -->
+                    <li class="cardset-two__card">
+                        <img src="./images/service-1.jpg" class="cardset-two__img" alt="Услуга №1" width="370" height="294">
+                        <div class="cardset-two__title-box">
+                            <h3 class="cardset-two__title">Десктопные приложения</h3>
+                        </div>
+                    </li>
+                    <!-- Карточка списка секции услуги -->
+                    <li class="cardset-two__card">
+                        <img src="./images/service-2.jpg" class="cardset-two__img" alt="Услуга №2" width="370" height="294">
+                        <div class="cardset-two__title-box">
+                            <h3 class="cardset-two__title">Мобильные приложения</h3>
+                        </div>
+                    </li>
+                    <!-- Карточка списка секции услуги -->
+                    <li class="cardset-two__card">
+                        <img src="./images/service-3.jpg" class="cardset-two__img" alt="Услуга №3" width="370" height="294">
+                        <div class="cardset-two__title-box">
+                            <h3 class="cardset-two__title">Дизайнерские решения</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- Секция наша команда -->
+        <section class="section team-section">
+
+            <!-- Контейнер секции наша команда -->
+            <div class="container">
+                <!-- Заголовок секции наша команда -->
+                <h2 class="section-title">Наша команда</h2>
+                <!-- Список секции наша команда -->
+                <ul class="cardset-three">
+                    <!-- Карточка списка наша команда -->
+                    <li class="cardset-three__card">
+                        <img src="./images/team-member-1.jpg" class="cardset-three__img" alt="Фото учасника команды" width="270"
+                            height="260">
+                        <div class="cardset-three__box">
+                            <h3 class="cardset-three__title">Игорь Демьяненко</h3>
+                            <p lang="en" class="cardset-three__text">Product Designer</p>
+                            <!-- Список иконок соцсетей -->
+                            <ul class="iconset-one">
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-instagram-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-twitter-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-facebook-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-linkedin-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Карточка списка наша команда -->
+                    <li class="cardset-three__card">
+                        <img src="./images/team-member-2.jpg" class="cardset-three__img" alt="Фото учасника команды" width="270"
+                            height="260">
+                        <div class="cardset-three__box">
+                            <h3 class="cardset-three__title">Ольга Репина</h3>
+                            <p lang="en" class="cardset-three__text">Frontend Developer</p>
+                            <!-- Список иконок соцсетей -->
+                            <ul class="iconset-one">
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-instagram-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-twitter-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-facebook-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-linkedin-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Карточка списка наша команда -->
+                    <li class="cardset-three__card">
+                        <img src="./images/team-member-3.jpg" class="cardset-three__img" alt="Фото учасника команды" width="270"
+                            height="260">
+                        <div class="cardset-three__box">
+                            <h3 class="cardset-three__title">Николай Тарасов</h3>
+                            <p lang="en" class="cardset-three__text">Marketing</p>
+                            <!-- Список иконок соцсетей -->
+                            <ul class="iconset-one">
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-instagram-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-twitter-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-facebook-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-linkedin-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- Карточка списка наша команда -->
+                    <li class="cardset-three__card">
+                        <img src="./images/team-member-4.jpg" class="cardset-three__img" alt="Фото учасника команды" width="270"
+                            height="260">
+                        <div class="cardset-three__box">
+                            <h3 class="cardset-three__title">Михаил Ермаков</h3>
+                            <p lang="en" class="cardset-three__text">UI Designer</p>
+                            <!-- Список иконок соцсетей -->
+                            <ul class="iconset-one">
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-instagram-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-twitter-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-facebook-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Иконка списка соцсетей -->
+                                <li class="iconset-one__item">
+                                    <a href="" class="iconset-one__link iconset-one__link--bright-bg">
+                                        <svg class="iconset-one__icon iconset-one__icon--bright-bg" width="20" height="20">
+                                            <use href="./images/icons.svg#icon-linkedin-icon"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- Секция постоянные клиенты -->
+        <section class="section customers-section">
+
+            <!-- Контейнер секции постоянные клиенты -->
+            <div class="container">
+                <!-- Заголовок секции постоянные клиенты -->
+                <h2 class="section-title">Постоянные клиенты</h2>
+                <!-- Список иконок секции постоянные клиенты -->
+                <ul class="iconset-two">
+                    <!-- Иконка списка постоянные клиенты -->
+                    <li class="iconset-two__item">
+                        <a href="" class="iconset-two__link">
+                            <svg class="iconset-two__icon" width="106" height="60">
+                                <use href="./images/icons.svg#icon-customer-1-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Иконка списка постоянные клиенты -->
+                    <li class="iconset-two__item">
+                        <a href="" class="iconset-two__link">
+                            <svg class="iconset-two__icon" width="106" height="60">
+                                <use href="./images/icons.svg#icon-customer-2-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Иконка списка постоянные клиенты -->
+                    <li class="iconset-two__item">
+                        <a href="" class="iconset-two__link">
+                            <svg class="iconset-two__icon" width="106" height="60">
+                                <use href="./images/icons.svg#icon-customer-3-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Иконка списка постоянные клиенты -->
+                    <li class="iconset-two__item">
+                        <a href="" class="iconset-two__link">
+                            <svg class="iconset-two__icon" width="106" height="60">
+                                <use href="./images/icons.svg#icon-customer-4-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Иконка списка постоянные клиенты -->
+                    <li class="iconset-two__item">
+                        <a href="" class="iconset-two__link">
+                            <svg class="iconset-two__icon" width="106" height="60">
+                                <use href="./images/icons.svg#icon-customer-5-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Иконка списка постоянные клиенты -->
+                    <li class="iconset-two__item">
+                        <a href="" class="iconset-two__link">
+                            <svg class="iconset-two__icon" width="106" height="60">
+                                <use href="./images/icons.svg#icon-customer-6-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Футер страницы -->
+    <footer class="footer">
+
+        <!-- Контейнер футера -->
+        <div class="container footer__container">
+            <!-- Контейнер адреса футера -->
+            <div class="footer__address-box">
+                <!-- Логотип футера -->
+                <a href="./index.html" lang="en" class="logo footer__logo">Web<span class="footer__logo--color">Studio</span></a>
+                <!-- Адрес футера -->
+                <address class="address">
+                    <p class="address__location">г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul class="address__list">
+                        <li class="address__item">
+                            <a href="mailto:info@devstudio.com"
+                            class="address__link">info@devstudio.com</a>
+                        </li>
+                        <li class="address__item">
+                            <a href="tel:+380961111111"
+                            class="address__link">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <!-- Контейнер социальных иконок футера -->
+            <div class="footer__social-box">
+                <!-- Призыв к действию -->
+                <p class="footer__sub-title">присоединяйтесь</p>
+                <!-- Список иконок соцсетей -->
+                <ul class="iconset-one">
+                    <!-- Иконка списка соцсетей -->
+                    <li class="iconset-one__item">
+                        <a href="" class="iconset-one__link iconset-one__link--dark-bg">
+                            <svg class="iconset-one__icon iconset-one__icon--dark-bg" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Иконка списка соцсетей -->
+                    <li class="iconset-one__item">
+                        <a href="" class="iconset-one__link iconset-one__link--dark-bg">
+                            <svg class="iconset-one__icon iconset-one__icon--dark-bg" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Иконка списка соцсетей -->
+                    <li class="iconset-one__item">
+                        <a href="" class="iconset-one__link iconset-one__link--dark-bg">
+                            <svg class="iconset-one__icon iconset-one__icon--dark-bg" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- Иконка списка соцсетей -->
+                    <li class="iconset-one__item">
+                        <a href="" class="iconset-one__link iconset-one__link--dark-bg">
+                            <svg class="iconset-one__icon iconset-one__icon--dark-bg" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Контейнер фрмы футера -->
+            <div class="footer__form-box">
+                <!-- Форма футера -->
+                <form class="footer__form">
+                    <!-- Призыв к действию -->
+                    <p class="footer__sub-title">Подпишитесь на рассылку</p>
+                    <div class="footer__submit-box">
+                        <input type="email" name="user-email" class="footer__input" placeholder="E-mail" required>
+                        <button class="btn main-btn footer__btn" type="submit">
+                            <span class="main-btn__text">Подписаться</span>
+                            <svg class="main-btn__icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-send-icon"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Бекдроп и модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+
+        <!-- Модальное окно -->
+        <div class="modal">
+            <!-- Кнопка закрытия модального окна -->
+            <button class="btn modal__close-btn" data-modal-close>
+                <svg class="modal__close-icon">
+                    <use href="./images/icons.svg#icon-cross-form-icon"></use>
+                </svg>
+            </button>
+            <!-- Форма -->
+            <form name="modal-form">
+                <!-- Заголовок формы -->
+                <p class="modal-form__title">Оставьте свои данные, мы вам перезвоним</p>
+                <!-- Поле ввода имени -->
+                <label class="modal-form__label">
+                    <span class="modal-form__text">Имя</span>
+                    <input type="text" name="user-name" class="modal-form__input" required>
+                    <svg class="modal-form__icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-user-form-icon"></use>
+                    </svg>
+                </label>
+                <!-- Поле ввода телефона -->
+                <label class="modal-form__label">
+                    <span class="modal-form__text">Телефон</span>
+                    <input type="text" name="user-name" class="modal-form__input" required>
+                    <svg class="modal-form__icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-phone-form-icon"></use>
+                    </svg>
+                </label>
+                <!-- Поле ввода email -->
+                <label class="modal-form__label">
+                    <span class="modal-form__text">Почта</span>
+                    <input type="text" name="user-name" class="modal-form__input" required>
+                    <svg class="modal-form__icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-email-form-icon"></use>
+                    </svg>
+                </label>
+                <!-- Поле ввода комментария -->
+                <label class="modal-form__commentary-label">
+                    <span class="modal-form__text">Комментарий</span>
+                    <textarea name="commentary" class="modal-form__commentary" placeholder="Введите текст"></textarea>
+                </label>
+                <!-- Чекбокс и условия договора -->
+                <label class="modal-form__policy-label">
+                    <input class="modal-form__checkbox visually-hidden" type="checkbox" name="checkbox"
+                        value="agree" required>
+                    <span class="modal-form__custom-checkbox"></span>
+                    <span class="modal-form__policy-text">Соглашаюсь с рассылкой и принимаю
+                        <a class="modal-form__policylabel-link" href="https://www.google.com.ua/" target="_blank">Условия
+                            договора</a>
+                    </span>
+                </label>
+                <!-- Кнопка отправить -->
+                <button class="btn main-btn modal-form__btn" type="submit">Отправить</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <!-- JS для модального окна -->
+    <script src="./js/modal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+.cardset-one {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.cardset-one__card {
+    flex-basis: calc(100% / 4 - 30px);
+    margin: 30px 0 0 30px;
+}
+
+.cardset-one__icon-box {
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: $bgSecondaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardset-one__icon {
+    display: block;
+}
+
+.cardset-one__title {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.cardset-one__description {
+    line-height: calc(24 / 14);
+    color: $textSecondaryColor;
+}

@@ -1,0 +1,49 @@
+// ЦВЕТ
+// Цвет акцента сайта
+$accentColor: #2196f3;
+// Цвет бекграунда сайта
+$bgPrimaryColor: #ffffff;
+$bgSecondaryColor: #f5f4fa;
+$footerBgColor: #2f303a;
+// Цвет текста сайта
+$textPrimaryColor: #212121;
+$textSecondaryColor: #757575;
+// Цвет иконок
+$iconsPrimaryColor: #afb1b8;
+$iconsSecondaryColor: #ffffff;
+// Цвет текста кнопок
+$btnPrimaryTextColor: #ffffff;
+$btnSecondaryTextColor: #212121;
+// Цвет ховера основной кнопки
+$mainBtnHoverColor: #188ce8;
+// Цвет заголовка секции герой
+$heroTitleColor: #ffffff;
+// Цвет текста футера
+$footerPrimaryTextColor: #ffffff;
+$footerSecondaryTextColor: rgba(255, 255, 255, 0.6);
+// Цвет бекграунда иконок футера
+$footerIconsBgColor: rgba(255, 255, 255, 0.1);
+// Цвет кнопки фильтра
+$filterBtnColor: #f5f4fa;
+// Цвет оверлея карточки портфолио
+$overlayCardColor: rgba(33, 150, 243, 0.9);
+
+// АНИМАЦИЯ
+// Основной transition
+$mainTransition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// ТЕНИ
+// Тень основной кнопки
+$mainBtnShadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+// Тень карточки члена команды
+$teamCardShadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+// Тень модального окна
+$modalShadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+// Тень карточки портфолио
+$portfolioCardShadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+// Тень кнопки фильтра
+$filterBtnShadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);

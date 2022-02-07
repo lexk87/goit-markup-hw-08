@@ -1,0 +1,6 @@
+// Стили активной кнопки фильтра или ховер,фокус на кнопку фильтра
+%filterBtnHovFocAct {
+    background-color: $accentColor;
+    color: $btnPrimaryTextColor;
+    box-shadow: $filterBtnShadow;
+}
