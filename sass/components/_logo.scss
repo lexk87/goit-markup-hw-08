@@ -2,14 +2,25 @@
     display: block;
     font-family: Raleway;
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+    font-size: 24px;
+    line-height: calc(28 / 24);
     color: $accentColor;
+    @include min1200 {
+        font-size: 26px;
+        line-height: calc(31 / 26);
+    }
 }
 
 .header__logo {
-    padding: 24px 0 25px 0;
-    margin-right: 93px;
+    padding: 16px 0;
+    @include min768 {
+        padding: 26px 0;
+        margin-right: 88px;
+    }
+    @include min1200 {
+        padding: 24px 0 25px 0;
+        margin-right: 93px;
+    }
     &--color {
         color: $textPrimaryColor;
     }

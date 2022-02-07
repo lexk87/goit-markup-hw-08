@@ -3,6 +3,7 @@
 @import './base/normalize';
 @import './base/reset';
 @import './components/body';
+@import './utils/mixins';
 // Детали
 @import './components/section';
 @import './components/container';
@@ -22,6 +23,6 @@
 // Секции
 @import './components/header';
 @import './components/hero-section';
-@import './components/advantages-section';
+@import './components/services-section';
 @import './components/team-section';
 @import './components/footer';

@@ -1,6 +1,14 @@
 .container {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
+    @include min480 {
+        width: 480px;
+    }
+    @include min768 {
+        width: 768px;
+    }
+    @include min1200 {
+        width: 1200px;
+    }
 }
