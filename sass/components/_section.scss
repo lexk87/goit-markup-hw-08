@@ -1,4 +1,6 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0;
+    @include min1200 {
+        padding: 94px 0;
+    }
 }

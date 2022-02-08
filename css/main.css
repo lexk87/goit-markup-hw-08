@@ -184,8 +184,13 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .container {
@@ -229,12 +234,12 @@ body {
 }
 
 .header__logo {
-  padding: 16px 0;
+  padding: 16px 0 15px 0;
 }
 
 @media screen and (min-width: 768px) {
   .header__logo {
-    padding: 26px 0;
+    padding: 26px 0 25px 0;
     margin-right: 88px;
   }
 }
@@ -930,7 +935,7 @@ body {
 }
 
 .links-list__link {
-  padding: 32px 0;
+  padding: 32px 0 32px 0;
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -1244,28 +1249,85 @@ body {
 }
 
 .hero__container {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-img.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-img.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-img/480/hero-bg-img-480@x1.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-img/480/hero-bg-img-480@x1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #2f303a;
-  max-width: 1600px;
-  height: 600px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 118px 15px;
   text-align: center;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-img/480/hero-bg-img-480@x2.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-img/480/hero-bg-img-480@x2.jpg);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .hero__container {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-img/768/hero-bg-img-768@x1.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-img/768/hero-bg-img-768@x1.jpg);
+  }
+}
+
+@media screen and (min-width: 576px) and (min-device-pixel-ratio: 2), screen and (min-width: 576px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 576px) and (min-resolution: 192dpi), screen and (min-width: 576px) and (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-img/768/hero-bg-img-768@x2.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-img/768/hero-bg-img-768@x2.jpg);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero__container {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-img/1200/hero-bg-img-1200@x1.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-img/1200/hero-bg-img-1200@x1.jpg);
+  }
+}
+
+@media screen and (min-width: 992px) and (min-device-pixel-ratio: 2), screen and (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 992px) and (min-resolution: 192dpi), screen and (min-width: 992px) and (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-img/1200/hero-bg-img-1200@x2.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-img/1200/hero-bg-img-1200@x2.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero__container {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding: 200px 15px;
+    max-width: 1600px;
+    height: 600px;
+  }
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
+  font-size: 26px;
+  line-height: calc(42 / 26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  max-width: 696px;
+  max-width: 360px;
   margin: 0 auto 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    max-width: 696px;
+  }
 }
 
 .services-section {
