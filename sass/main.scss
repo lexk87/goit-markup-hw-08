@@ -1,9 +1,9 @@
 @import './utils/variables';
+@import './utils/mixins';
 @import './utils/visually-hidden';
 @import './base/normalize';
 @import './base/reset';
 @import './components/body';
-@import './utils/mixins';
 // Детали
 @import './components/section';
 @import './components/container';

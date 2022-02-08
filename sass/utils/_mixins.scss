@@ -15,3 +15,21 @@
         @content;
     }
 }
+
+@mixin max479 {
+    @media screen and (max-width: 479px) {
+        @content;
+    }
+}
+
+@mixin max767 {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin max1199 {
+    @media screen and (max-width: 1199px) {
+        @content;
+    }
+}

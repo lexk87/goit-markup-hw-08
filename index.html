@@ -36,7 +36,7 @@
             <ul class="contacts-list">
                 <li class="contacts-list__item">
                     <a href="mailto:info@devstudio.com" class="contacts-list__link">
-                        <svg class="contacts-list__icon" width="16" height="12">
+                        <svg class="contacts-list__icon contacts-list__icon--email">
                             <use href="./images/icons.svg#icon-email-icon"></use>
                         </svg>
                         <span>info@devstudio.com</span>
@@ -45,19 +45,82 @@
 
                 <li class="contacts-list__item">
                     <a href="tel:+380961111111" class="contacts-list__link">
-                        <svg class="contacts-list__icon" width="10" height="16">
+                        <svg class="contacts-list__icon contacts-list__icon--smartphone">
                             <use href="./images/icons.svg#icon-smartphone-icon"></use>
                         </svg>
                         <span>+38 096 111 11 11</span>
                     </a>
                 </li>
             </ul>
+            <!-- Кнопка открытия мобильного меню -->
+            <button class="btn mob-menu-btn js-open-menu" aria-expanded="false"
+            aria-controls="mobile-menu">
+                <svg class="mob-menu-btn__icon">
+                    <use href="./images/icons.svg#icon-open-menu-icon"></use>
+                </svg>
+            </button>
+            <!-- Внешний контейнер мобильного меню -->
+            <div class="mob-menu js-menu-container">
+                <!-- Внутренний контейнер мобильного меню -->
+                <div class="mob-menu__box">
+                    <!-- Кнопка закрытия мобильного меню -->
+                    <button class="btn mob-menu-btn js-close-menu mob-menu__close-btn">
+                        <svg class="mob-menu-btn__icon">
+                            <use href="./images/icons.svg#icon-close-menu-icon"></use>
+                        </svg>
+                    </button>
+                    <!-- Навигация мобильного меню -->
+                    <nav class="mob-menu__nav">
+                        <!-- Список ссылок мобильного меню -->
+                        <ul class="mob-menu__link-list">
+                            <li class="mob-menu__link-item">
+                                <a href="./index.html" class="mob-menu__link mob-menu__link--active">Студия</a>
+                            </li>
+                            <li class="mob-menu__link-item">
+                                <a href="./portfolio.html" class="mob-menu__link">Портфолио</a>
+                            </li>
+                            <li class="mob-menu__link-item">
+                                <a href="" class="mob-menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Контейнер контактов мобильного меню -->
+                    <div class="mob-menu__contacts-box">
+                        <!-- Список контактов мобильного меню -->
+                        <ul class="mob-menu__contacts-list">
+                            <li class="mob-menu__contacts-item">
+                                <a href="tel:+380961111111" class="mob-menu__contacts-link mob-link">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mob-menu__contacts-item">
+                                <a href="mailto:info@devstudio.com" class="mob-menu__contacts-link email-link">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <!-- Список соцсетей мобильного меню -->
+                        <ul class="mob-menu__social-list">
+                            <li class="mob-menu__social-item">
+                                <a href="" class="mob-menu__social-link">Instagram</a>
+                            </li>
+                            <li class="mob-menu__social-item">
+                                <a href="" class="mob-menu__social-link">Twitter</a>
+                            </li>
+                            <li class="mob-menu__social-item">
+                                <a href="" class="mob-menu__social-link">Facebook</a>
+                            </li>
+                            <li class="mob-menu__social-item">
+                                <a href="" class="mob-menu__social-link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </header>
 
     <!-- JS для модального окна -->
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 </html>
