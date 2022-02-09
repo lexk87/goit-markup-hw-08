@@ -1,10 +1,29 @@
 .portfolio__filter {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    @include min768 {
+        margin-bottom: 30px;
+    }
+    @include min1200 {
+        margin-bottom: 50px;
+    }
+    @include max767 {
+        margin-top: -15px;
+    }
 }
 
 .filter {
+    @include max767 {
+        justify-content: start;
+    }
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+}
+
+.filter__item {
+    @include max767 {
+        margin-top: 15px;
+    }
 }
 
 .filter__item:not(:last-child) {

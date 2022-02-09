@@ -1,18 +1,30 @@
 .cardset-four {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    @include min768 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 
 .cardset-four__card {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
+    @include max767 {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    @include min768 {
+        flex-basis: calc(100% / 2 - 30px);
+        margin: 15px;
+    }
+    @include min1200 {
+        flex-basis: calc(100% / 3 - 30px);
+    }
 }
 
 .cardset-four__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow $mainTransition;
     &:hover,
     &:focus {
@@ -48,6 +60,7 @@
 }
 
 .cardset-four__text-box {
+    flex-grow: 1;
     padding: 20px 24px;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
