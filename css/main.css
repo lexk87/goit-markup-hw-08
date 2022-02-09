@@ -410,15 +410,12 @@ body {
   position: relative;
 }
 
-.cardset-two__title-box {
+.cardset-two__title {
   background-color: rgba(47, 48, 58, 0.8);
   position: absolute;
   bottom: 0;
   width: 100%;
-}
-
-.cardset-two__title {
-  padding: 27px 0;
+  padding: 27px;
   font-size: 14px;
   line-height: calc(16 / 14);
   text-align: center;
@@ -1363,6 +1360,13 @@ body {
 
 .services-section {
   padding-top: 0;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .services-section {
+    display: block;
+  }
 }
 
 .team-section {
