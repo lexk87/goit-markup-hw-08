@@ -62,9 +62,8 @@
 .cardset-four__text-box {
     flex-grow: 1;
     padding: 20px 24px;
-    border-left: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
+    border: 1px solid #eeeeee;
+    border-top: none;
 }
 
 .cardset-four__title {
