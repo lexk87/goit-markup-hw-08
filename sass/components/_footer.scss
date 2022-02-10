@@ -4,12 +4,24 @@
 }
 
 .footer__container {
-    display: flex;
-    align-items: baseline;
+    @include min768 {
+        display: flex;
+        align-items: baseline;
+    }
+    @include max1199 {
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
 
 .footer__address-box {
-    margin-right: 70px;
+    @include max767 {
+        margin-bottom: 60px;
+    }
+    @include min1200 {
+        margin-right: 85px;
+    }
 }
 
 .address {
@@ -17,13 +29,19 @@
 }
 
 .address__location {
+    margin-bottom: 8px;
     line-height: calc(24 / 14);
     color: $footerPrimaryTextColor;
-    margin-bottom: 9px;
+    @include min1200 {
+        margin-bottom: 9px;
+    }
 }
 
 .address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @include min1200 {
+        margin-bottom: 9px;
+    }
 }
 
 .address__link {
@@ -37,7 +55,9 @@
 }
 
 .footer__social-box {
-    margin-right: 93px;
+    @include min1200 {
+        margin-right: 93px;
+    }
 }
 
 .footer__sub-title {
@@ -48,18 +68,28 @@
     margin-bottom: 20px;
 }
 
+.footer__form-box {
+    @include max1199 {
+        margin-top: 60px;
+    }
+}
+
 .footer__submit-box {
-    display: flex;
-    align-items: center;
+    @include min1200 {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .footer__input {
-    width: 358px;
+    display: block;
+    width: 100%;
     height: 50px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     box-shadow: $mainBtnShadow;
+    margin-bottom: 20px;
     padding: 0 16px;
     cursor: pointer;
     font-size: 16px;
@@ -67,7 +97,6 @@
     letter-spacing: 0.03em;
     color: $footerPrimaryTextColor;
     transition: border $mainTransition;
-    margin-right: 12px;
     &::placeholder {
         font-size: 16px;
         line-height: calc(20 / 16);
@@ -77,5 +106,13 @@
     &:focus {
         outline: none;
         border: 1px solid $footerPrimaryTextColor;
+    }
+    @include min480 {
+        width: 450px;
+    }
+    @include min1200 {
+        width: 358px;
+        margin-right: 12px;
+        margin-bottom: 0;
     }
 }
