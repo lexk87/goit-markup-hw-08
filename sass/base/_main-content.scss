@@ -1,0 +1,9 @@
+main {
+    padding-top: 60px;
+    @include min768 {
+        padding-top: 80px;
+    }
+    @include min1200 {
+        padding-top: 81px;
+    }
+}
